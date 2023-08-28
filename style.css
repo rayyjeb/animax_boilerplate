@@ -18,6 +18,7 @@ header {
     max-width: 100%;
     max-height: 100%;
     border: 8px solid #1B1717;
+    
 }
 
 #logo img {
@@ -80,6 +81,7 @@ h1 {
     font-family: 'Passion One', cursive;
     font-size: 55px;
     font-weight: lighter;
+    text-align: center;
 }
 
 p {
@@ -100,6 +102,77 @@ footer {
     height: 90px;
     text-align: center;
 }
+.flex-container{
+    /* flex-direction: column; */
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.movies{
+    flex-wrap: wrap;
+    margin:3% 14%;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: 3s all ease;
+    
+}
+.movies{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+#scroll {
+    position: relative;
+    animation: arrow 3s infinite;
+}
+
+@keyframes arrow{
+    0%{
+        top: 15px;
+
+    }
+    100%{
+        top:50px;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    wrap.reverse {
+        flex-wrap:wrap-reverse ;
+    }
+.container{
+    text-align: center;
+
+}
+.button{
+    background-color: rgb(0, 136, 255);
+}
+}
+/* }
+@media only screen and (min-width:100px) and (max-width:300px){
+    wrap.reverse {
+        flex-wrap:wrap-reverse ;
+    }
+.container{
+    text-align: center;
+
+}
+.button{
+    background-color: rgb(255, 221, 0);
+}
+} */
+
+
+
 
 /* Iteration 1: Styling all the flex elements with (Justify-content:space-between) & (align-items:center) */
 
