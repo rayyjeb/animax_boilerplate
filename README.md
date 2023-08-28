@@ -1,1 +1,1 @@
-# animax_boilerplate
+# animax
